@@ -34,7 +34,7 @@
         <label>Quantidade</label>
         <input name="quantidade" class="form-control" type="number"  value="{{ old('quantidade') }}"/>
     </div>
-    <button class="btn btn-primary btn-block">Salvar</button>
+    <button class="btn btn-primary">Salvar</button>
 
 </form>
 

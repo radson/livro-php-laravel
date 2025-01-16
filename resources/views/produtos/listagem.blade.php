@@ -9,11 +9,11 @@
 @else
     <table class="table table-striped table-bordered table-hover">
         <tr>
-            <th>Nome</th>
-            <th>Valor</th>
-            <th>Descrição</th>
-            <th>Quantidade</th>
-            <th colspan="3">Ações</th>
+            <th class="text-center">Nome</th>
+            <th class="text-center">Valor</th>
+            <th class="text-center">Descrição</th>
+            <th class="text-center">Quantidade</th>
+            <th class="text-center" colspan="3">Ações</th>
         </tr>
         @foreach ($produtos as $p)
             <tr class="{{ $p->quantidade <= 1 ? 'danger' : ''}}">
@@ -21,17 +21,17 @@
                 <td>{{ $p->valor }}</td>
                 <td>{{ $p->descricao }}</td>
                 <td>{{ $p->quantidade }}</td>
-                <td>
+                <td class="text-center">
                     <a href="{{route('produtos.mostra', [$p->id])}}">
                         <span class="glyphicon  glyphicon-search"></span>
                     </a>
                 </td>
-                <td>
+                <td class="text-center">
                     <a href="{{route('produtos.altera', [$p->id])}}">
                         <span class="glyphicon  glyphicon-edit"></span>
                     </a>
                 </td>
-                <td>
+                <td class="text-center">
                     <a href="{{ route('produtos.remove', [$p->id]) }}">
                         <span class="glyphicon glyphicon-trash"></span>
                     </a>

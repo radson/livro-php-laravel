@@ -1,11 +1,11 @@
 <?php
 
-namespace Estoque\Http\Controllers;
+namespace App\Http\Controllers;
 
-use Estoque\Http\Requests\ProdutosRequest;
+use App\Http\Requests\ProdutosRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Estoque\Models\Produto as ProdutoModel;
+use App\Models\Produto as ProdutoModel;
 
 class ProdutoController extends Controller
 {

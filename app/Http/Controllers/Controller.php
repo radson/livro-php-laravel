@@ -1,6 +1,6 @@
 <?php
 
-namespace Estoque\Http\Controllers;
+namespace App\Http\Controllers;
 
 abstract class Controller
 {
